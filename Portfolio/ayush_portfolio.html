@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYU's_portfolio</title>
+  <link href="bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <style>
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-container>div {
+      margin: 20px;
+    }
+
+    .photo1:hover {
+      transform: rotate3d(20,20,20,360deg);
+      bottom: 0;
+      right: 100px;
+      transition: 3s;
+      overflow: auto;
+    }
+
+    .photo2:hover {
+      transform: rotate3d(20,52,54,360deg);
+      bottom: 0;
+      right: 100px;
+      transition: 3s;
+      overflow: auto;
+    }
+    #cv:hover{
+          background-color: antiquewhite;
+          color: chartreuse;
+          border solid: 2px;
+          
+    }
+  </style>
+<script>
+  $(document).ready(function(){
+      $("#contect").onclick({
+         $("#contect me").();
+      });
+  });
+</script>
+</head>
+
+<body>
+  <!--nav bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><i class="fa fa-user"> AYU's_portfolio</i></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">MY SKILLS</a></li>
+        <li><a href="#">CERTIFICATIONS</a></li>
+        <li id="contect"><a href="#">CONTECT ME</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--intro-->
+  <div class="flex-container" style="background-color:#edf2fc">
+    <div style=" width: 150px ; height: 250px;"><br>
+      <img class="img-responsive w3-animate-fading" src="ayu.jpg" style="border-radius:50%; transition: 3s;height: 200px;">
+
+    </div>
+    <div style=width:50%>
+      <br>
+      <h1 style="margin:auto; color:; "> Hii There, <br> I'm Ayush Varsani</h1>
+      <h3 style="color:crimson ;">I'm Web developer !!</h3><br><br>
+      <button class="btn btn-warning" id="cv">
+        Download CV
+      </button>
+
+    </div>
+  </div>
+  <br>
+  <!--basic info-->
+  <div class="container-fluid">
+    <div class="text-center">
+      <div class=" row">
+
+        <div class="col-sm-4 w3-animate-left" id=" summary"
+          style="background-color:lemonchiffon;margin-left: 80px;width: 350px; height: 270px;animation-duration:3s;">
+          <br>
+          <h3><i class="fa fa-user"><b>ABOUT ME</b></i></h3>
+
+          <h4>
+            <ul>
+              <li>Curious,Creative and supportive web development.</li>
+              <li>A better problem solver with having better knowledge of Web development.
+              </li>
+              <li>I do have better logical code.</li>
+              <li>I will implement all my knowledge that I possess
+                in human welfare.
+
+              </li>
+            </ul>
+          </h4>
+
+        </div>
+        <div class="col-sm-4 w3-animate-zoom" id="project"
+          style="background-color:rgb(128,112,148); margin-left: 80px;height: 270px;width: 350px; animation-duration: 3s;">
+          <br>
+          <h3><i class="fa fa-tasks"><b> PROJECT</b> </i></h3>
+          <h4>
+            <ul>
+
+              <li>MAY,2022 I had made one watch website and after this task, I have made lots of small projects.</li>
+            </ul>
+          </h4>
+        </div>
+        <div class="col-sm-4 w3-animate-right" id="skill"
+          style="background-color:rgb(247,190,169); margin-left: 80px;height:270px;width: 350px; animation-direction:alternate;animation-duration: 3s;">
+          <br>
+          <h3><I class="fa fa-safari"><b> SKILL</b></I></h3>
+          <B>1.HTML</B><br>
+          <B>2.CSS</B><br>
+          <B>3.BOOTSTRAP</B><br>
+          <B>4.JAVASCRIPT</B><br>
+          <B>5.jQuery</B><br>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><br>
+  <!--certicate-->
+  <div class="container-fluid" style="background-color:rgb(252,252,251);">
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4">
+        <h2 style="text-align:center;">CERTIFICATIONS</h2>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container-fluid">
+    <div class="text-center">
+      <div class="row">
+        <div class="col-sm-4 photo1">
+          <img src="certificate1.PNG"></img>
+        </div>
+        <div class="col-sm-4 photo2">
+          <img src="certificate2.PNG"></img>
+        </div>
+        <div class="col-sm-4">
+          <img src="certificate1.PNG"></img>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <!--contect me-->
+  <div class="container-fluid w3-animate-top" id="contect me" style="background-color:rgb(85, 82, 82); margin-top:auto ;font-style:unset;animation-duration: 5s;">
+
+    <h2 class="text-center" style="color:lightcoral;"><b>CONTACT ME</b></h2>
+    <h4 style="color:white"><i class="fa fa-phone"> +919879096790</i></h4>
+    <h4 style="color:white"><i class="fa fa-envelope"> ayushvarsani203@gmail.com</i></h4>
+    <h4 style="color:skyblue"><i class="fa fa-linkedin"><a href="https://www.linkedin.com/in/ayush-varsani-7760b8215">
+          Ayush Varsani</a></i></h4>
+    <center>
+      <a href="https://www.facebook.com/login/"><i class="fa fa-facebook-official fa-2x" style="color:white ; "> . </i>
+      </a>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" style="color:white ;"> . </i> </a>
+      <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter fa-2x" style="color:white;"> . </i> </a>
+    </center>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
